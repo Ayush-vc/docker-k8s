@@ -12,7 +12,7 @@ jobs:
 
     steps: 
     - name: checkout
-      users: actions/checkout@v4
+      uses: actions/checkout@v4
       
     - name: Lint Code Base
       uses: super-linter/super-linter@v5
