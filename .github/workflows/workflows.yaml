@@ -1,0 +1,15 @@
+name: cicd
+
+on: 
+  push: 
+    branches: 
+      - master
+  workflow_dispatch: 
+
+jobs: 
+  cicd: 
+    run-on: ubuntu-latest
+
+    steps: 
+    - name: checkout
+      users: actions/checkout@v4
